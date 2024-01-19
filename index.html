@@ -20,6 +20,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'common-color': '#E76F51',
                     }
                 }
             }
@@ -27,7 +28,7 @@
     </script>
     <!-- custom styles -->
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
     </style>
@@ -35,10 +36,48 @@
 
 <body class="font-poppins">
     <!-- header section start -->
-    <header>
+    <header class="">
         <!-- nav section start -->
-        <nav>
-            
+        <nav class="">
+            <section class="container mx-auto px-4 py-6 lg:px-36 lg:py-14">
+                <div class="navbar bg-base-100">
+                    <div class="navbar flex-row-reverse lg:flex-row lg:flex-1">
+                        <div class="dropdown dropdown-bottom dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>Contact</a></li>
+                                <li><a>Login</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl lg:text-4xl font-bold">bike<span class="text-common-color">Horizon</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-base font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class=" hidden lg:flex">
+                        <a
+                            class="btn lg:flex px-8 text-xl font-semibold bg-common-color text-white hover:bg-transparent hover:text-black border-2 hover:border-common-color">Login</a>
+                    </div>
+                </div>
+            </section>
         </nav>
     </header>
     <main>
